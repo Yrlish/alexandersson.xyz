@@ -24,7 +24,10 @@
             }
 
             .title {
-                font-size: 2.28rem;
+                font-weight: 200;
+            }
+
+            .subtitle {
                 font-weight: 200;
             }
 
@@ -36,59 +39,57 @@
                 padding: 0 15px;
             }
 
-            .introduction .icon-block .fa {
-                font-size: inherit;
-            }
-
             .about-me .me {
                 height: 150px;
                 width: 150px;
                 overflow: hidden;
-                margin: 0 auto 20px;
+                margin: 0 auto 30px;
             }
 
             .about-me .me .fa {
                 font-size: 175px;
             }
 
-            .bg {
-                background: rgba(102,187,106,1);
-                background: -moz-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
-                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(102,187,106,1)), color-stop(100%, rgba(67,160,71,1)));
-                background: -webkit-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
-                background: -o-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
-                background: -ms-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
-                background: linear-gradient(135deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66bb6a', endColorstr='#43a047', GradientType=1 );
+            .projects .project .card-content {
+                height: 180px;
+            }
+
+            .footer {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .introduction .row, .about-me .row:last-child, .projects .row:last-child, .footer .row {
+                margin-bottom: 0;
             }
         </style>
     </head>
-    <body>
-        <div class="container-fluid bg">
+    <body class="grey lighten-5">
+        <div class="container-fluid green">
             <div class="container center-align introduction white-text">
                 <div class="row">
                     <div class="col m12">
-                        <span class="title">Hi.<br>
-                        My name is <b>Dennis</b>.</span><br>
-                        <span class="subtitle">And I create <b>apps</b>.</span>
+                        <h4 class="title">Hi.<br>
+                        My name is <b>Dennis</b></h4>
+                        <h5 class="subtitle">And I create <b>apps</b></h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col m4">
                         <div class="icon-block">
-                            <h2 class="center"><i class="fa fa-globe" aria-hidden="true"></i></h2>
+                            <h1 class="center"><i class="fa fa-globe" aria-hidden="true"></i></h1>
                             <h5 class="center">Web Development</h5>
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="icon-block">
-                            <h2 class="center"><i class="fa fa-flask" aria-hidden="true"></i></h2>
+                            <h1 class="center"><i class="fa fa-flask" aria-hidden="true"></i></h1>
                             <h5 class="center">Software Development</h5>
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="icon-block">
-                            <h2 class="center"><i class="fa fa-server" aria-hidden="true"></i></h2>
+                            <h1 class="center"><i class="fa fa-server" aria-hidden="true"></i></h1>
                             <h5 class="center">System Administration</h5>
                         </div>
                     </div>
@@ -99,7 +100,7 @@
             <div class="row center-align">
                 <div class="col m12">
                     <div class="me circle grey lighten-2">
-                        <i class="fa fa-user grey-text text-lighten-5" aria-hidden="true"></i>
+                        <i class="fa fa-user grey-text text-lighten-4" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -115,13 +116,13 @@
         <div class="container-fluid light-blue">
             <div class="container projects">
                 <div class="row center-align white-text">
-                    <div class="col m12 title">
-                        Some things I have made
+                    <div class="col m12">
+                        <h4 class="title">Some things I have made</h4>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col m3 project">
-                        <div class="card ">
+                    <div class="col m4 offset-m2 project">
+                        <div class="card">
                             <div class="card-content">
                                 <span class="card-title">WorkLog</span>
                                 <p>
@@ -135,6 +136,30 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col m4 project">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Homelab</span>
+                                <p>
+                                    Here you can find some information about my homelab project.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="blue-text" href="#">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer">
+            <div class="row">
+                <div class="col m4 offset-m2">
+                    Copyright &copy; 2017 Dennis Alexandersson
+                </div>
+                <div class="col m4 right-align">
+                    MIT License |
+                    <a href="#" target="_top">Source</a>
                 </div>
             </div>
         </div>
