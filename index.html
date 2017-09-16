@@ -1,29 +1,142 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Yrlish.io</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-    <style type="text/css">
-    .row {
-      margin-top: 30px;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m2 l3 hide-on-small-only">&nbsp;</div>
-        <div class="col s12 m8 l6">
-          <div class="card-panel teal">
-            <span class="white-text">
-              Welcome to to Yrlish.io.<br>This is where my personal website and projects will eventually end up. Soon&#8482;
-            </span>
-          </div>
+    <head>
+        <title>Yrlish.io</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.parallax').parallax();
+            });
+        </script>
+
+        <style type="text/css">
+            .introduction, .about-me, .projects {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .title {
+                font-size: 2.28rem;
+                font-weight: 200;
+            }
+
+            .introduction .row:nth-child(2) h5 {
+                font-weight: 200;
+            }
+
+            .introduction .icon-block {
+                padding: 0 15px;
+            }
+
+            .introduction .icon-block .fa {
+                font-size: inherit;
+            }
+
+            .about-me .me {
+                height: 150px;
+                width: 150px;
+                overflow: hidden;
+                margin: 0 auto 20px;
+            }
+
+            .about-me .me .fa {
+                font-size: 175px;
+            }
+
+            .bg {
+                background: rgba(102,187,106,1);
+                background: -moz-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(102,187,106,1)), color-stop(100%, rgba(67,160,71,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
+                background: linear-gradient(135deg, rgba(102,187,106,1) 0%, rgba(67,160,71,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66bb6a', endColorstr='#43a047', GradientType=1 );
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid bg">
+            <div class="container center-align introduction white-text">
+                <div class="row">
+                    <div class="col m12">
+                        <span class="title">Hi.<br>
+                        My name is <b>Dennis</b>.</span><br>
+                        <span class="subtitle">And I create <b>apps</b>.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m4">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="fa fa-globe" aria-hidden="true"></i></h2>
+                            <h5 class="center">Web Development</h5>
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="fa fa-flask" aria-hidden="true"></i></h2>
+                            <h5 class="center">Software Development</h5>
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="fa fa-server" aria-hidden="true"></i></h2>
+                            <h5 class="center">System Administration</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+        <div class="container about-me">
+            <div class="row center-align">
+                <div class="col m12">
+                    <div class="me circle grey lighten-2">
+                        <i class="fa fa-user grey-text text-lighten-5" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m4 offset-m2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultrices lectus. Pellentesque sed diam lobortis metus mattis posuere. Nunc bibendum et arcu at rhoncus. Vestibulum mauris quam, placerat id cursus sit amet, fringilla et tortor. Sed at metus iaculis, pretium sapien eget, rhoncus tortor. Sed in sem convallis diam pulvinar ultricies vehicula et orci. Pellentesque porttitor vel massa quis posuere.
+                </div>
+                <div class="col m4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultrices lectus. Pellentesque sed diam lobortis metus mattis posuere. Nunc bibendum et arcu at rhoncus. Vestibulum mauris quam, placerat id cursus sit amet, fringilla et tortor. Sed at metus iaculis, pretium sapien eget, rhoncus tortor. Sed in sem convallis diam pulvinar ultricies vehicula et orci. Pellentesque porttitor vel massa quis posuere.
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid light-blue">
+            <div class="container projects">
+                <div class="row center-align white-text">
+                    <div class="col m12 title">
+                        Some things I have made
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m3 project">
+                        <div class="card ">
+                            <div class="card-content">
+                                <span class="card-title">WorkLog</span>
+                                <p>
+                                    Keep track of how much time you are working in different projects.
+                                    Log your work with start and stop time, and WorkLog automatically calculates how
+                                    much work have been made per project per day.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="blue-text" href="#">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
