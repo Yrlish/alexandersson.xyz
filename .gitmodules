@@ -1,3 +1,0 @@
-[submodule "deployer"]
-	path = deployer
-	url = git@bitbucket.org:YrlishTeam/deployer.git
