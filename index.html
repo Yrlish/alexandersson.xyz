@@ -14,11 +14,22 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.parallax').parallax();
+
+                $('.carousel').carousel({
+                    indicators: true,
+                    dist: 0,
+                    padding: 25
+                });
             });
         </script>
 
         <style type="text/css">
-            .introduction, .about-me, .projects {
+            .introduction {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            .about-me, .projects {
                 padding-top: 50px;
                 padding-bottom: 50px;
             }
@@ -39,6 +50,10 @@
                 padding: 0 15px;
             }
 
+            .introduction .icon-block h1 {
+                margin-bottom: 0;
+            }
+
             .about-me .me {
                 height: 150px;
                 width: 150px;
@@ -48,6 +63,10 @@
 
             .about-me .me .fa {
                 font-size: 175px;
+            }
+
+            .projects .carousel .carousel-item {
+                width: 400px;
             }
 
             .footer {
@@ -65,9 +84,9 @@
             <div class="container center-align introduction white-text">
                 <div class="row">
                     <div class="col s12 m12">
-                        <h4 class="title">Hi.<br>
-                        My name is <b>Dennis</b></h4>
-                        <h5 class="subtitle">And I create <b>apps</b></h5>
+                        <h3 class="title">Hi.<br>
+                        My name is <b>Dennis</b></h3>
+                        <h4 class="subtitle">And I create <b>apps</b></h4>
                     </div>
                 </div>
                 <div class="row">
@@ -117,31 +136,48 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 m6 project">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">WorkLog</span>
-                                <p>
-                                    Keep track of how much time you are working in different projects.
-                                    Log your work with start and stop time, and WorkLog automatically calculates how
-                                    much work have been made per project per day.
-                                </p>
+                    <div class="col s12 m12 project">
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">WorkLog</span>
+                                        <p>
+                                            Keep track of how much time you are working in different projects.
+                                            Log your work and WorkLog automatically calculates how much work
+                                            have been made per project per day in a simple UI.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="blue-text">Website</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-action">
-                                <a class="blue-text" href="#">Website</a>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">Homelab</span>
+                                        <p>
+                                            Here you can find some information about my homelab project.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="blue-text">Website</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 project">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Homelab</span>
-                                <p>
-                                    Here you can find some information about my homelab project.
-                                </p>
-                            </div>
-                            <div class="card-action">
-                                <a class="blue-text" href="#">Website</a>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">Placeholder</span>
+                                        <p>
+                                            This is a placeholder card
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="blue-text">Website</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
