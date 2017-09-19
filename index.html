@@ -25,8 +25,8 @@
 
         <style type="text/css">
             .introduction {
-                padding-top: 75px;
-                padding-bottom: 75px;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
 
             .about-me, .projects {
@@ -34,24 +34,25 @@
                 padding-bottom: 50px;
             }
 
-            .title {
+            .title, .subtitle {
                 font-weight: 200;
             }
 
-            .subtitle {
-                font-weight: 200;
-            }
-
-            .introduction .row:nth-child(2) h5 {
-                font-weight: 200;
-            }
-
-            .introduction .icon-block {
-                padding: 0 15px;
+            .title b, .subtitle b{
+                font-weight: 400;
             }
 
             .introduction .icon-block h1 {
                 margin-bottom: 0;
+            }
+
+            .introduction .icon-block h5 {
+                font-weight: 200;
+                margin-top: 5px;
+            }
+
+            .introduction .icon-block {
+                padding: 0 15px;
             }
 
             .about-me .me {
@@ -63,19 +64,6 @@
 
             .about-me .me .fa {
                 font-size: 175px;
-            }
-
-            .projects .carousel {
-                height: 350px;
-            }
-
-            .projects .carousel .carousel-item {
-                width: 300px;
-                margin-top: -75px;
-            }
-
-            .projects .carousel .carousel-item .card {
-                max-height: 275px;
             }
 
             .footer {
@@ -94,7 +82,7 @@
                 <div class="row">
                     <div class="col s12 m12">
                         <h3 class="title">Hi.<br>
-                        My name is <b>Dennis</b></h3>
+                            My name is <b>Dennis</b></h3>
                         <h4 class="subtitle">And I create <b>apps</b></h4>
                     </div>
                 </div>
@@ -145,48 +133,31 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 m12 project">
-                        <div class="carousel">
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <span class="card-title">WorkLog</span>
-                                        <p>
-                                            Keep track of how much time you are working in different projects.
-                                            Log your work and WorkLog automatically calculates how much work
-                                            have been made per project per day in a simple UI.
-                                        </p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a class="blue-text">Website</a>
-                                    </div>
-                                </div>
+                    <div class="col s12 m4 offset-m2 project">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">WorkLog</span>
+                                <p>
+                                    Keep track of how much time you are working in different projects.
+                                    Log your work and WorkLog automatically calculates how much work
+                                    have been made per project per day in a simple UI.
+                                </p>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <span class="card-title">Homelab</span>
-                                        <p>
-                                            Here you can find some information about my homelab project.
-                                        </p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a class="blue-text">Website</a>
-                                    </div>
-                                </div>
+                            <div class="card-action">
+                                <a class="blue-text">Website</a>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <span class="card-title">Placeholder</span>
-                                        <p>
-                                            This is a placeholder card
-                                        </p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a class="blue-text">Website</a>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 project">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Homelab</span>
+                                <p>
+                                    Here you can find some information about my homelab project.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="blue-text">Website</a>
                             </div>
                         </div>
                     </div>
