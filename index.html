@@ -21,12 +21,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" href="style.css">
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     </head>
     <body class="grey lighten-5">
         <div class="container-fluid green">
@@ -70,13 +71,13 @@
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                    I have always been interested in problem solving and puzzles. When I found the world of coding
-                    and programming during the last years of primary school
-                    (<a href="https://en.wikipedia.org/wiki/Primary_education#Sweden" title="Information about primary schools in Sweden" target="_blank">wiki: primary schools in Sweden</a>),
-                    I knew what I wanted to do. Since then my interest and knowledge about technology and programming
-                    has just increased, and is still increasing. As of today, I have collected a lot of knowledge
-                    about web development, software development and system administration from self-learning,
-                    education and work experience.
+                    I have always been interested in problem-solving and puzzles. When I found the world of coding and
+                    programming during the last years of primary school
+                    (<a href="https://en.wikipedia.org/wiki/Primary_education#Sweden" target="_blank"> wiki: primary
+                    schools in Sweden</a>), I knew what I wanted to do. Since then my interest and knowledge about
+                    technology and programming has just increased, and is still increasing. As of today, I have
+                    collected a lot of knowledge about web development, software development and system administration
+                    from self-learning, education and work experience.
                 </div>
                 <div class="col s12 m6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultrices lectus. Pellentesque sed diam lobortis metus mattis posuere. Nunc bibendum et arcu at rhoncus. Vestibulum mauris quam, placerat id cursus sit amet, fringilla et tortor. Sed at metus iaculis, pretium sapien eget, rhoncus tortor. Sed in sem convallis diam pulvinar ultricies vehicula et orci. Pellentesque porttitor vel massa quis posuere.
@@ -122,20 +123,41 @@
                 </div>
             </div>
         </div>
+        <div id="not-finished-modal" class="modal">
+            <div class="modal-content">
+                <h4>Website still in progress</h4>
+                <p>
+                    The website is not finished yet. Still some example text left over,
+                    links that should be there does not work, etc, etc.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
         <div class="container footer">
             <div class="row">
                 <div class="col s12 m8">
                     Copyright &copy; 2017 Dennis Alexandersson
                 </div>
                 <div class="col m4 right-align hide-on-small-only"> <!-- Align this to the right on tablet and above -->
-                    <a href="//tldrlegal.com/license/mit-license" target="_top">MIT License</a> |
+                    <a href="https://tldrlegal.com/license/mit-license" target="_top">MIT License</a> |
                     <a href="#" target="_top">Source</a>
                 </div>
                 <div class="col s12 hide-on-med-and-up"> <!-- Show on its own line on mobile -->
-                    <a href="//tldrlegal.com/license/mit-license" target="_top">MIT License</a> |
+                    <a href="https://tldrlegal.com/license/mit-license" target="_top">MIT License</a> |
                     <a href="#" target="_top">Source</a>
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript">
+            $(function() {
+                if (Cookies.get("modal-shown") !== "true") {
+                    $('#not-finished-modal').modal().modal('open');
+                    Cookies.set("modal-shown", "true", { expires: 7 });
+                }
+            });
+        </script>
     </body>
 </html>
