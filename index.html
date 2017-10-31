@@ -168,20 +168,21 @@
                 </div>
                 <div class="col m4 right-align hide-on-small-only"> <!-- Align this to the right on tablet and above -->
                     <a href="https://tldrlegal.com/license/mit-license" target="_top">MIT License</a> |
-                    <a href="#" target="_top">Source</a>
+                    <a href="https://gitlab.alexandersson.xyz/dennis/alexandersson.xyz" target="_top">Source</a>
                 </div>
                 <div class="col s12 hide-on-med-and-up"> <!-- Show on its own line on mobile -->
                     <a href="https://tldrlegal.com/license/mit-license" target="_top">MIT License</a> |
-                    <a href="#" target="_top">Source</a>
+                    <a href="https://gitlab.alexandersson.xyz/dennis/alexandersson.xyz" target="_top">Source</a>
                 </div>
             </div>
         </div>
 
         <script type="text/javascript">
             $(function() {
+                // If the modal has been shown in the last 3 days, do not show it again.
                 if (Cookies.get("modal-shown") !== "true") {
                     $('#not-finished-modal').modal().modal('open');
-                    Cookies.set("modal-shown", "true", { expires: 7 });
+                    Cookies.set("modal-shown", "true", { expires: 3 });
                 }
             });
         </script>
