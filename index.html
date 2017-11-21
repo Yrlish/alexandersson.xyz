@@ -25,9 +25,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" href="style.css">
 
+        <!-- Disabled because it is not being used, unnecessary to load
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        -->
     </head>
     <body class="grey lighten-5">
         <div class="container-fluid green">
@@ -75,12 +76,14 @@
                     programming during the last years of primary school
                     (<a href="https://en.wikipedia.org/wiki/Primary_education#Sweden" target="_blank">wiki: primary
                     schools in Sweden</a>), I knew what I wanted to do. Since then my interest and knowledge about
-                    technology and programming has just increased, and is still increasing. As of today, I have
-                    collected a lot of knowledge about web development, software development and system administration
-                    from self-learning, education and work experience.
+                    technology and programming has just increased, and is still increasing.
                 </div>
                 <div class="col s12 m6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultrices lectus. Pellentesque sed diam lobortis metus mattis posuere. Nunc bibendum et arcu at rhoncus. Vestibulum mauris quam, placerat id cursus sit amet, fringilla et tortor. Sed at metus iaculis, pretium sapien eget, rhoncus tortor. Sed in sem convallis diam pulvinar ultricies vehicula et orci. Pellentesque porttitor vel massa quis posuere.
+                    As of today, I have collected a lot of knowledge about web development, software development
+                    and system administration from self-learning, education and work experience.<br>
+                    And today, I am working as a software developer at a technical consulting company called
+                    <a href="http://combitech.com" target="_blank">Combitech</a>, which is part of the defence and
+                    security group <a href="http://saabgroup.com" target="_blank">Saab AB</a>.
                 </div>
             </div>
         </div>
@@ -97,13 +100,14 @@
                             <div class="card-content">
                                 <span class="card-title">WorkLog</span>
                                 <p>
-                                    Keep track of how much time you are working in different projects.
+                                    Easily keep track of how much time you are working in different projects.
                                     Log your work and WorkLog automatically calculates how much work
                                     have been made per project per day in a simple UI.
                                 </p>
                             </div>
                             <div class="card-action">
-                                <a class="blue-text">Website</a>
+                                <a class="red-text line-through">Website</a>
+                                <a class="blue-text" href="https://gitlab.alexandersson.xyz/dennis/WorkLog" target="_blank">Git</a>
                             </div>
                         </div>
                     </div>
@@ -116,24 +120,11 @@
                                 </p>
                             </div>
                             <div class="card-action">
-                                <a class="blue-text">Website</a>
+                                <a class="red-text line-through">Website</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div id="not-finished-modal" class="modal">
-            <div class="modal-content">
-                <h4>Website still in progress</h4>
-                <p>
-                    The website is not finished yet. Still some example text left over,
-                    links that should be there does not work, etc, etc.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
         </div>
 
@@ -142,18 +133,22 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </a>
             <ul>
+                <!--
                 <li>
                     <a href="https://jira.alexandersson.xyz" target="_blank" class="btn-floating blue darken-3"><i class="fa fa-tasks" aria-hidden="true"></i></a>
                     <a href="https://jira.alexandersson.xyz" target="_blank" class="btn-floating mobile-fab-tip">JIRA</a>
                 </li>
+                -->
                 <li>
-                    <a href="https://gitlab.alexandersson.xyz" target="_blank" class="btn-floating deep-purple darken-3"><i class="fa fa-code" aria-hidden="true"></i></a>
-                    <a href="https://gitlab.alexandersson.xyz" target="_blank" class="btn-floating mobile-fab-tip">GitLab</a>
+                    <a href="https://gitlab.alexandersson.xyz/dennis" target="_blank" class="btn-floating deep-purple darken-3"><i class="fa fa-code" aria-hidden="true"></i></a>
+                    <a href="https://gitlab.alexandersson.xyz/dennis" target="_blank" class="btn-floating mobile-fab-tip">GitLab</a>
                 </li>
+                <!--
                 <li>
                     <a href="https://jenkins.alexandersson.xyz" target="_blank" class="btn-floating yellow darken-3"><i class="fa fa-gear" aria-hidden="true"></i></a>
                     <a href="https://jenkins.alexandersson.xyz" target="_blank" class="btn-floating mobile-fab-tip">Jenkins</a>
                 </li>
+                -->
                 <li>
                     <a href="https://jira.alexandersson.xyz/servicedesk" target="_blank" class="btn-floating blue darken-3"><i class="fa fa-ticket" aria-hidden="true"></i></a>
                     <a href="https://jira.alexandersson.xyz/servicedesk" target="_blank" class="btn-floating mobile-fab-tip">Service Desk</a>
@@ -176,15 +171,5 @@
                 </div>
             </div>
         </div>
-
-        <script type="text/javascript">
-            $(function() {
-                // If the modal has been shown in the last 3 days, do not show it again.
-                if (Cookies.get("modal-shown") !== "true") {
-                    $('#not-finished-modal').modal().modal('open');
-                    Cookies.set("modal-shown", "true", { expires: 3 });
-                }
-            });
-        </script>
     </body>
 </html>

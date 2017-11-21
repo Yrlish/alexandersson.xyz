@@ -75,3 +75,7 @@
     color: #FFF;
     width:auto;
 }
+
+.line-through {
+    text-decoration: line-through;
+}
