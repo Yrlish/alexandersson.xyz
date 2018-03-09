@@ -50,10 +50,7 @@
     width: 200px;
     overflow: hidden;
     margin: 0 auto 30px;
-}
-
-.about-me .me .fa {
-    font-size: 175px;
+    background-image: url('https://gravatar.com/avatar/5084457b26c6c0188ef53673d5221782.jpg?s=200');
 }
 
 .footer {
