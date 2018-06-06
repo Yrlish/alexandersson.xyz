@@ -27,6 +27,12 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.modal').modal();
+            });
+        </script>
     </head>
     <body class="grey lighten-5">
         <div class="container-fluid green">
@@ -101,8 +107,9 @@
                                 </p>
                             </div>
                             <div class="card-action">
-                                <a class="red-text line-through">Website</a>
-                                <a class="blue-text" href="https://github.com/Yrlish/WorkLog" target="_blank">Git</a>
+                                <a class="blue-text modal-trigger" href="#worklog-modal">More info</a>
+                                <a class="blue-text" href="https://github.com/Yrlish/WorkLog/releases" target="_blank">Releases</a>
+                                <a class="blue-text" href="https://github.com/Yrlish/WorkLog" target="_blank">Source</a>
                             </div>
                         </div>
                     </div>
@@ -120,6 +127,25 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="worklog-modal" class="modal">
+            <div class="modal-content">
+                <h4>WorkLog</h4>
+                <p>
+                    WorkLog is made for people working in multiple projects and needs to keep track of all time
+                    spent on each project, if you for example need to fill in time reports for your employer on
+                    what you work on.
+                </p>
+                <p>
+                    Instead of writing it all down into a text file, spreadsheet or similar and calculate together
+                    all hours per day per project by yourself, you write in a start time and stop time for a working
+                    session and WorkLog summarizes it all and presents it nicely for you.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a class="modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
         </div>
 
