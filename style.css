@@ -6,6 +6,7 @@
 .about-me, .projects {
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: justify;
 }
 
 .title, .subtitle {
@@ -25,6 +26,10 @@
     margin-top: 5px;
 }
 
+.introduction .icon-block p {
+    font-size: 80%;
+}
+
 .introduction .icon-block {
     padding: 0 15px;
 }
@@ -37,6 +42,10 @@
     background-image: url('https://gravatar.com/avatar/a76cec1be98d6d7d4ff781b9d1c3f4c9.jpg?s=200');
 }
 
+.projects {
+
+}
+
 .footer {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -46,17 +55,6 @@
     margin-bottom: 0;
 }
 
-.mobile-fab-tip {
-    position: fixed;
-    right: 85px;
-    padding: 0px 0.5rem;
-    text-align: right;
-    background-color: #323232;
-    border-radius: 2px;
-    color: #FFF;
-    width: auto;
-}
-
-.line-through {
-    text-decoration: line-through;
+.underline {
+    text-decoration: underline;
 }
