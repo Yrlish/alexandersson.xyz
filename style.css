@@ -6,7 +6,6 @@
 .about-me, .projects {
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: justify;
 }
 
 .title, .subtitle {
@@ -32,6 +31,10 @@
 
 .introduction .icon-block {
     padding: 0 15px;
+}
+
+.about-me {
+    text-align: justify;
 }
 
 .about-me .me {
