@@ -42,7 +42,7 @@
     width: 200px;
     overflow: hidden;
     margin: 0 auto 30px;
-    background-image: url('https://gravatar.com/avatar/a76cec1be98d6d7d4ff781b9d1c3f4c9.jpg?s=200');
+    background-image: url('imgs/me.jpg');
 }
 
 .projects {
