@@ -43,6 +43,7 @@
     overflow: hidden;
     margin: 0 auto 30px;
     background-image: url('imgs/me.jpg');
+    background-size: cover;
 }
 
 .projects {
