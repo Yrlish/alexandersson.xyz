@@ -26,14 +26,14 @@ export default function AnimatedIntro(props: { setDone: () => void }): JSX.Eleme
           }}
           onTypingDone={props.setDone}
         >
-          Hello.
-          <Typist.Backspace count={6} delay={1000}/>
+          Hello
+          <Typist.Backspace count={5} delay={1000}/>
           <Typist.Delay ms={500}/>
-          I am Dennis.
-          <Typist.Backspace count={12} delay={1000}/>
+          I am Dennis
+          <Typist.Backspace count={11} delay={1000}/>
           <Typist.Delay ms={500}/>
-          And I make apps.
-          <Typist.Backspace count={16} delay={1000}/>
+          And I make apps
+          <Typist.Backspace count={15} delay={1000}/>
           <Typist.Delay ms={500}/>
         </Box>
       </Typography>
