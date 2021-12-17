@@ -1,10 +1,10 @@
-import React, {useCallback, useState} from "react";
+import React, { useCallback, useState } from "react"
 
 export default function App(props: { message: string }): JSX.Element {
-  const [count, setCount] = useState(0);
+  const [ count, setCount ] = useState(0)
   const increment = useCallback(() => {
-    setCount(count => count + 1);
-  }, [count]);
+    setCount(count => count + 1)
+  }, [ count ])
 
   return (
     <>
@@ -13,4 +13,4 @@ export default function App(props: { message: string }): JSX.Element {
       <button onClick={increment}>Increment</button>
     </>
   )
-};
+}
