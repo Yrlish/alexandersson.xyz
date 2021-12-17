@@ -1,7 +1,7 @@
 {
   "name": "portfolio-react",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "private": true,
   "scripts": {
     "bundle": "esbuild src/index.tsx --bundle --outdir=public/dist --loader:.woff=file --loader:.woff2=file",
