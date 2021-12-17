@@ -4,20 +4,29 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --minify --outdir=public/build --loader:.woff=file --loader:.woff2=file",
-    "start": "yarn run build --servedir=public"
+    "bundle": "esbuild src/index.tsx --bundle --outdir=public/dist --loader:.woff=file --loader:.woff2=file",
+    "build": "yarn run bundle --minify",
+    "start": "yarn run bundle --servedir=public",
+    "clean": "rm -rf public/dist"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/roboto": "^4.5.1",
+    "@mui/icons-material": "^5.2.4",
+    "@mui/material": "^5.2.4",
+    "esbuild": "^0.14.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "@yrlish/eslint-config": "^1.1.4",
-    "esbuild": "^0.14.5",
     "eslint": "^8.4.1",
     "eslint-plugin-react": "^7.27.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "typescript": "^4.5.4"
   }
 }

@@ -1,4 +1,4 @@
-/public/build/
-/.idea
-/node_modules
+/public/dist/
+/.idea/
+/node_modules/
 /*.log

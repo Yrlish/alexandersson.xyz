@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react"
 import useThemeDetector from "../hooks/useThemeDector"
+import { Home } from "@mui/icons-material"
 
 export default function App(props: { message: string }): JSX.Element {
   const [ count, setCount ] = useState(0)
@@ -15,6 +16,7 @@ export default function App(props: { message: string }): JSX.Element {
       <h2>Count: {count}</h2>
       <button onClick={increment}>Increment</button>
       <h1>Dark theme: {isDarkTheme ? "dark" : "light"}</h1>
+      <Home/>
     </>
   )
 }
