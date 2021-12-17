@@ -1,13 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./components/App"
+import AppWrapper from "./components/AppWrapper"
 
-import "@fontsource/roboto/latin-300.css"
+import "./assets/global.css"
 import "@fontsource/roboto/latin-400.css"
-import "@fontsource/roboto/latin-500.css"
-import "@fontsource/roboto/latin-700.css"
+import "@fontsource/roboto-mono/latin-400.css"
 
 ReactDOM.render(
-  <App message="Hello World! Simple Counter App built on ESBuild + React + Typescript"/>,
+  <AppWrapper/>,
   document.getElementById("root"),
 )
