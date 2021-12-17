@@ -1,11 +1,11 @@
 {
   "name": "portfolio-react",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=public/build/bundle.js"
+    "build": "esbuild src/index.tsx --bundle --minify --outdir=public/build --loader:.woff=file --loader:.woff2=file",
+    "start": "yarn run build --servedir=public"
   },
   "dependencies": {
     "@types/react": "^17.0.37",

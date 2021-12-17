@@ -14,7 +14,7 @@ export default function App(props: { message: string }): JSX.Element {
       <h1>{props.message}</h1>
       <h2>Count: {count}</h2>
       <button onClick={increment}>Increment</button>
-      <h1>Dark theme: {isDarkTheme ? "dark": "light"}</h1>
+      <h1>Dark theme: {isDarkTheme ? "dark" : "light"}</h1>
     </>
   )
 }
