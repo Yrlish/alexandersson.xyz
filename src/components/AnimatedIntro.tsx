@@ -1,15 +1,19 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import Typist from "react-typist"
 import { Box, responsiveFontSizes, ThemeProvider, Typography, useTheme } from "@mui/material"
 
-export default function AnimatedIntro(props: { setDone: () => void }): JSX.Element {
+type Props = {
+  setDone: () => void
+}
+
+const AnimatedIntro = forwardRef(function AnimatedIntroC(props: Props, ref: any): JSX.Element {
   const theme = responsiveFontSizes(useTheme())
 
   return (
     <ThemeProvider theme={theme}>
       <Typography
+        ref={ref}
         variant={"h2"}
-        fontFamily={"Roboto Mono"}
         height={"100%"}
         display={"flex"}
         alignItems={"center"}
@@ -37,4 +41,6 @@ export default function AnimatedIntro(props: { setDone: () => void }): JSX.Eleme
       </Typography>
     </ThemeProvider>
   )
-}
+})
+
+export default AnimatedIntro
