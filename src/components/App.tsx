@@ -1,13 +1,26 @@
 import React, { useState } from "react"
 import AnimatedIntro from "./AnimatedIntro"
-import { Box, Container, Grid, IconButton, Slide, Stack, Toolbar, Typography, useTheme } from "@mui/material"
-import { Code, GitHub, LinkedIn, Public, Storage, Twitter } from "@mui/icons-material"
+import {
+  Box,
+  Container,
+  Grid,
+  IconButton,
+  Slide,
+  Stack,
+  Toolbar,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material"
+import { Code, GitHub, Public, Storage, Twitter } from "@mui/icons-material"
 
 export default function App(): JSX.Element {
   const [ introRunning, setIntroRunning ] = useState(true)
   const [ introDone, setIntroDone ] = useState(false)
 
   const theme = useTheme()
+  const mobile = useMediaQuery(theme.breakpoints.down("md"))
+
   return (
     <>
       <Slide
@@ -25,7 +38,12 @@ export default function App(): JSX.Element {
       >
         <Container>
           <Toolbar>
-            <Typography component={"h1"} variant={"h6"} flexGrow={1}>
+            <Typography component={"h1"} variant={mobile ? "body1" : "h6"} sx={{
+              textOverflow: "ellipsis",
+              overflow: "hidden",
+              whiteSpace: "nowrap",
+              flexGrow: 1,
+            }}>
               Dennis Alexandersson
             </Typography>
             <Stack direction={"row"} spacing={1}>
@@ -34,9 +52,6 @@ export default function App(): JSX.Element {
               </IconButton>
               <IconButton href={"https://github.com/Yrlish"} target={"_blank"}>
                 <GitHub/>
-              </IconButton>
-              <IconButton href={"https://www.linkedin.com/in/dennis-alexandersson-xyz"} target={"_blank"}>
-                <LinkedIn/>
               </IconButton>
             </Stack>
           </Toolbar>
