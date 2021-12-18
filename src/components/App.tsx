@@ -12,7 +12,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material"
-import { Code, GitHub, Public, Storage, Twitter } from "@mui/icons-material"
+import { Code, GitHub, Handyman, Public, Twitter } from "@mui/icons-material"
 
 export default function App(): JSX.Element {
   const [ introRunning, setIntroRunning ] = useState(true)
@@ -63,7 +63,7 @@ export default function App(): JSX.Element {
                   Web Development
                 </Typography>
                 <Typography variant={"caption"}>
-                  HTML, CSS, TypeScript, React
+                  TypeScript, React, esbuild
                 </Typography>
               </Box>
             </Grid>
@@ -80,12 +80,12 @@ export default function App(): JSX.Element {
             </Grid>
             <Grid item xs={12} md>
               <Box textAlign={"center"} py={theme.spacing(5)}>
-                <Storage sx={{ fontSize: theme.typography.h1.fontSize }}/>
+                <Handyman sx={{ fontSize: theme.typography.h1.fontSize }}/>
                 <Typography variant={"h6"}>
-                  Server Administration
+                  DevOps
                 </Typography>
                 <Typography variant={"caption"}>
-                  Ubuntu, VMWare ESXi, Window Server
+                  Git, GitLab, Jenkins, YouTrack, Jira
                 </Typography>
               </Box>
             </Grid>
