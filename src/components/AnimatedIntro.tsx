@@ -2,8 +2,6 @@ import React from "react"
 import Typist from "react-typist"
 import { Box, responsiveFontSizes, ThemeProvider, Typography, useTheme } from "@mui/material"
 
-import "./AnimatedIntro.css"
-
 export default function AnimatedIntro(props: { setDone: () => void }): JSX.Element {
   const theme = responsiveFontSizes(useTheme())
 
