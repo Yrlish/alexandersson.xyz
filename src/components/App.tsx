@@ -37,7 +37,7 @@ export default function App(): JSX.Element {
         mountOnEnter
       >
         <Container>
-          <Toolbar>
+          <Toolbar sx={{ px: "0 !important" }}>
             <Typography component={"h1"} variant={mobile ? "body1" : "h6"} sx={{
               textOverflow: "ellipsis",
               overflow: "hidden",
