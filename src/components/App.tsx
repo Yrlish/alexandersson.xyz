@@ -8,10 +8,21 @@ export default function App(): JSX.Element {
   const [ introRunning, setIntroRunning ] = useState(true)
   const [ introDone, setIntroDone ] = useState(false)
 
+  const skipIntroEvent = () => {
+    document.removeEventListener("click", skipIntroEvent)
+    document.removeEventListener("keypress", skipIntroEvent)
+    document.removeEventListener("touchend", skipIntroEvent)
+
+    setIntroRunning(false)
+    setIntroDone(true)
+  }
+
+  document.addEventListener("click", skipIntroEvent)
+  document.addEventListener("keypress", skipIntroEvent)
+  document.addEventListener("touchend", skipIntroEvent)
 
   return (
-    <Box
-    >
+    <Box>
       <Slide
         in={introRunning}
         appear={false}
