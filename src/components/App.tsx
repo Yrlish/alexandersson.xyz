@@ -12,7 +12,16 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material"
-import { Code, GitHub, Handyman, Public, Twitter } from "@mui/icons-material"
+import { Code, GitHub, Handyman, Public, School, Twitter, Work } from "@mui/icons-material"
+import {
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineOppositeContent,
+  TimelineSeparator,
+} from "@mui/lab"
 
 export default function App(): JSX.Element {
   const [ introRunning, setIntroRunning ] = useState(true)
@@ -56,7 +65,7 @@ export default function App(): JSX.Element {
             </Stack>
           </Toolbar>
           <Grid container>
-            <Grid item xs={12} md>
+            <Grid item xs={12} md={4}>
               <Box textAlign={"center"} py={theme.spacing(5)}>
                 <Public sx={{ fontSize: theme.typography.h1.fontSize }}/>
                 <Typography variant={"h6"}>
@@ -67,7 +76,7 @@ export default function App(): JSX.Element {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md>
+            <Grid item xs={12} md={4}>
               <Box textAlign={"center"} py={theme.spacing(5)}>
                 <Code sx={{ fontSize: theme.typography.h1.fontSize }}/>
                 <Typography variant={"h6"}>
@@ -78,7 +87,7 @@ export default function App(): JSX.Element {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md>
+            <Grid item xs={12} md={4}>
               <Box textAlign={"center"} py={theme.spacing(5)}>
                 <Handyman sx={{ fontSize: theme.typography.h1.fontSize }}/>
                 <Typography variant={"h6"}>
@@ -90,11 +99,74 @@ export default function App(): JSX.Element {
               </Box>
             </Grid>
           </Grid>
-          <Typography paragraph>
-            My primary interest is software development, my main focus is towards backend Java and my secondary is
-            towards frontend web. I have multiple years of professional experience with both. Because of my interest
-            in learning systems I also have knowledge of managing some DevOps stuff.
-          </Typography>
+          <Grid container>
+            <Grid item xs={12} md={6}>
+              <Typography paragraph>
+                My primary interest is software development, my main focus is towards backend Java and my secondary is
+                towards frontend web. I have multiple years of professional experience with both. Because of my interest
+                in learning systems I also have knowledge of managing some DevOps stuff.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Timeline position="left">
+                <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary" variant="body2" margin={"auto 0"}>
+                    Jan 2022 - present
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineConnector sx={{ visibility: "hidden" }}/>
+                    <TimelineDot color={"primary"} variant={"outlined"}>
+                      <Work/>
+                    </TimelineDot>
+                    <TimelineConnector/>
+                  </TimelineSeparator>
+                  <TimelineContent>
+                    <Typography variant="h6" component="span">
+                      Sogeti
+                    </Typography>
+                    <Typography variant="body2">Software Engineer</Typography>
+                  </TimelineContent>
+                </TimelineItem>
+
+                <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary" variant="body2" margin={"auto 0"}>
+                    Aug 2015 - Dec 2021
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineConnector/>
+                    <TimelineDot color={"secondary"} variant={"outlined"}>
+                      <Work/>
+                    </TimelineDot>
+                    <TimelineConnector/>
+                  </TimelineSeparator>
+                  <TimelineContent>
+                    <Typography variant="h6" component="span">
+                      Combitech
+                    </Typography>
+                    <Typography variant="body2">Software Developer</Typography>
+                  </TimelineContent>
+                </TimelineItem>
+
+                <TimelineItem>
+                  <TimelineOppositeContent color="text.secondary" variant="body2" margin={"auto 0"}>
+                    2012 - 2015
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineConnector/>
+                    <TimelineDot color={"secondary"} variant={"outlined"}>
+                      <School/>
+                    </TimelineDot>
+                    <TimelineConnector sx={{ visibility: "hidden" }}/>
+                  </TimelineSeparator>
+                  <TimelineContent margin={"auto 0"}>
+                    <Typography variant="h6" component="span">
+                      NTI Gymnasiet
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+              </Timeline>
+            </Grid>
+          </Grid>
         </Container>
       </Slide>
     </>
