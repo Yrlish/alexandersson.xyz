@@ -29,8 +29,7 @@ export default function ExperienceTimeline(): JSX.Element {
           margin={"auto 0"}
           fontSize={"0.8rem"}
         >
-          Jan 2022 -<br/>
-          present
+          Jan 2022 - present
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector sx={{ visibility: "hidden" }}/>
@@ -56,8 +55,7 @@ export default function ExperienceTimeline(): JSX.Element {
           margin={"auto 0"}
           fontSize={"0.8rem"}
         >
-          Aug 2015 -<br/>
-          Dec 2021
+          Aug 2015 - Dec&nbsp;2021
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector/>
