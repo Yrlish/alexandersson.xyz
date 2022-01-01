@@ -107,15 +107,33 @@ export default function App(): JSX.Element {
             <Grid item xs={12} md={6}>
               <Typography paragraph>
                 My primary interest is software development, my main focus is towards backend Java and my secondary is
-                towards frontend web. I have multiple years of professional experience with both. Because of my interest
+                towards frontend web. I have many years of professional experience with both. Because of my interest
                 in learning systems I also have knowledge of managing some DevOps stuff.
+              </Typography>
+              <Typography paragraph>
+                Currently I do not have any maintained hobby projects, but there are some old repositories available on
+                my GitHub.
               </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Timeline position="left">
+              <Timeline position="left" sx={{
+                p: 0,
+                "& .MuiTimelineContent-positionLeft": {
+                  pl: 0,
+                },
+                "& .MuiTimelineOppositeContent-positionLeft": {
+                  pr: 0,
+                },
+              }}>
                 <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary" variant="body2" margin={"auto 0"}>
-                    Jan 2022 - present
+                  <TimelineOppositeContent
+                    color="text.secondary"
+                    variant="body2"
+                    margin={"auto 0"}
+                    fontSize={"0.8rem"}
+                  >
+                    Jan 2022 -<br/>
+                    present
                   </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector sx={{ visibility: "hidden" }}/>
@@ -124,17 +142,25 @@ export default function App(): JSX.Element {
                     </TimelineDot>
                     <TimelineConnector/>
                   </TimelineSeparator>
-                  <TimelineContent>
-                    <Typography variant="h6" component="span">
+                  <TimelineContent margin={"auto 0"}>
+                    <Typography>
                       Sogeti
                     </Typography>
-                    <Typography variant="body2">Software Engineer</Typography>
+                    <Typography variant="body2" fontSize={"0.7rem"}>
+                      Software Engineer
+                    </Typography>
                   </TimelineContent>
                 </TimelineItem>
 
                 <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary" variant="body2" margin={"auto 0"}>
-                    Aug 2015 - Dec 2021
+                  <TimelineOppositeContent
+                    color="text.secondary"
+                    variant="body2"
+                    margin={"auto 0"}
+                    fontSize={"0.8rem"}
+                  >
+                    Aug 2015 -<br/>
+                    Dec 2021
                   </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector/>
@@ -143,16 +169,18 @@ export default function App(): JSX.Element {
                     </TimelineDot>
                     <TimelineConnector/>
                   </TimelineSeparator>
-                  <TimelineContent>
-                    <Typography variant="h6" component="span">
+                  <TimelineContent margin={"auto 0"}>
+                    <Typography>
                       Combitech
                     </Typography>
-                    <Typography variant="body2">Software Developer</Typography>
+                    <Typography variant="body2" fontSize={"0.7rem"}>
+                      Software Developer
+                    </Typography>
                   </TimelineContent>
                 </TimelineItem>
 
                 <TimelineItem>
-                  <TimelineOppositeContent color="text.secondary" variant="body2" margin={"auto 0"}>
+                  <TimelineOppositeContent color="text.secondary" variant="body2" margin={"auto 0"} fontSize={"0.8rem"}>
                     2012 - 2015
                   </TimelineOppositeContent>
                   <TimelineSeparator>
@@ -163,7 +191,7 @@ export default function App(): JSX.Element {
                     <TimelineConnector sx={{ visibility: "hidden" }}/>
                   </TimelineSeparator>
                   <TimelineContent margin={"auto 0"}>
-                    <Typography variant="h6" component="span">
+                    <Typography component="span">
                       NTI Gymnasiet
                     </Typography>
                   </TimelineContent>
