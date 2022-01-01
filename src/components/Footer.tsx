@@ -6,12 +6,11 @@ export default function Footer(): JSX.Element {
     <Box
       component={"footer"}
       mt={"auto"}
-      px={2}
-      py={3}
+      p={1}
       textAlign={"center"}
     >
       <Container maxWidth={"sm"}>
-        <Typography variant={"body2"} fontStyle={"italic"} color={"text.secondary"}>
+        <Typography variant={"body2"} fontSize={".65rem"} fontStyle={"italic"} color={"text.secondary"}>
           You can find the source{" "}
           <a href={"https://github.com/Yrlish/alexandersson.xyz"} target={"_blank"} rel="noreferrer">here</a>.
         </Typography>
