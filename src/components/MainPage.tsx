@@ -37,8 +37,7 @@ export default function MainPage(): JSX.Element {
             in learning systems I also have knowledge of managing some DevOps stuff.
           </Typography>
           <Typography>
-            Currently I do not have any maintained hobby projects, but there are some old repositories available on
-            my GitHub.
+            Currently I do not have any maintained projects, but there are some old repositories available on my GitHub.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
