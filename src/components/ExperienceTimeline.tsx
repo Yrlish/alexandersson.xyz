@@ -15,6 +15,7 @@ export default function ExperienceTimeline(): JSX.Element {
   return (
     <Timeline position="left" sx={{
       p: 0,
+      m: 0,
       "& .MuiTimelineContent-positionLeft": {
         pl: 0,
       },

@@ -36,7 +36,7 @@ export default function MainPage(): JSX.Element {
             towards frontend web. I have many years of professional experience with both. Because of my interest
             in learning systems I also have knowledge of managing some DevOps stuff.
           </Typography>
-          <Typography paragraph>
+          <Typography>
             Currently I do not have any maintained hobby projects, but there are some old repositories available on
             my GitHub.
           </Typography>
