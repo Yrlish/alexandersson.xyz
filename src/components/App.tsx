@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import AnimatedIntro from "./AnimatedIntro"
 import { Box, Slide } from "@mui/material"
 import Footer from "./Footer"
@@ -9,16 +9,23 @@ export default function App(): JSX.Element {
   const [ introDone, setIntroDone ] = useState(false)
 
   const skipIntroEvent = () => {
-    document.removeEventListener("click", skipIntroEvent)
-    document.removeEventListener("keypress", skipIntroEvent)
-    document.removeEventListener("touchend", skipIntroEvent)
-
+    removeEvent()
     setIntroRunning(false)
   }
 
-  document.addEventListener("click", skipIntroEvent)
-  document.addEventListener("keypress", skipIntroEvent)
-  document.addEventListener("touchend", skipIntroEvent)
+  const removeEvent = () => {
+    document.removeEventListener("click", skipIntroEvent)
+    document.removeEventListener("keypress", skipIntroEvent)
+    document.removeEventListener("touchend", skipIntroEvent)
+  }
+
+  useEffect(() => {
+    document.addEventListener("click", skipIntroEvent)
+    document.addEventListener("keypress", skipIntroEvent)
+    document.addEventListener("touchend", skipIntroEvent)
+
+    return removeEvent
+  }, [])
 
   return (
     <Box>
