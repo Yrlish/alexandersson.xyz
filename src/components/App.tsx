@@ -91,18 +91,9 @@ export default function App(): JSX.Element {
             </Grid>
           </Grid>
           <Typography paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aperiam at aut, cum distinctio dolor
-            esse ex hic ipsa iusto molestias non optio sequi totam unde velit vero voluptate.
-          </Typography>
-          <Typography paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam distinctio doloremque ducimus
-            excepturi explicabo incidunt nihil qui sint voluptate. Ipsum possimus sed suscipit. Deserunt dolorum eaque
-            iste similique temporibus?
-          </Typography>
-          <Typography paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eligendi expedita modi necessitatibus
-            nesciunt nulla officiis recusandae unde voluptates. Dignissimos doloremque earum ipsa minima minus mollitia
-            numquam odio quis recusandae.
+            My primary interest is software development, my main focus is towards backend Java and my secondary is
+            towards frontend web. I have multiple years of professional experience with both. Because of my interest
+            in learning systems I also have knowledge of managing some DevOps stuff.
           </Typography>
         </Container>
       </Slide>
