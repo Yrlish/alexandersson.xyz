@@ -14,7 +14,6 @@ export default function App(): JSX.Element {
     document.removeEventListener("touchend", skipIntroEvent)
 
     setIntroRunning(false)
-    setIntroDone(true)
   }
 
   document.addEventListener("click", skipIntroEvent)
