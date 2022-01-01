@@ -31,7 +31,11 @@ export default function App(): JSX.Element {
   const mobile = useMediaQuery(theme.breakpoints.down("md"))
 
   return (
-    <>
+    <Box
+      display={"flex"}
+      flexDirection={"column"}
+      minHeight={"100vh"}
+    >
       <Slide
         in={introRunning}
         appear={false}
@@ -45,7 +49,7 @@ export default function App(): JSX.Element {
         direction={"up"}
         mountOnEnter
       >
-        <Container>
+        <Container component={"main"}>
           <Toolbar sx={{ px: "0 !important" }}>
             <Typography component={"h1"} variant={mobile ? "body1" : "h6"} sx={{
               textOverflow: "ellipsis",
@@ -56,10 +60,10 @@ export default function App(): JSX.Element {
               Dennis Alexandersson
             </Typography>
             <Stack direction={"row"} spacing={1}>
-              <IconButton href={"https://twitter.com/Yrlish"} target={"_blank"}>
+              <IconButton href={"https://twitter.com/Yrlish"} target={"_blank"} rel="noreferrer">
                 <Twitter/>
               </IconButton>
-              <IconButton href={"https://github.com/Yrlish"} target={"_blank"}>
+              <IconButton href={"https://github.com/Yrlish"} target={"_blank"} rel="noreferrer">
                 <GitHub/>
               </IconButton>
             </Stack>
@@ -169,7 +173,21 @@ export default function App(): JSX.Element {
           </Grid>
         </Container>
       </Slide>
-    </>
+      <Box
+        component={"footer"}
+        mt={"auto"}
+        px={2}
+        py={3}
+        textAlign={"center"}
+      >
+        <Container maxWidth={"sm"}>
+          <Typography variant={"body2"} fontStyle={"italic"} color={"text.secondary"}>
+            You can find the source{" "}
+            <a href={"https://github.com/Yrlish/alexandersson.xyz"} target={"_blank"} rel="noreferrer">here</a>.
+          </Typography>
+        </Container>
+      </Box>
+    </Box>
   )
 }
 
