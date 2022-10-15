@@ -35,8 +35,13 @@ export default function App(): JSX.Element {
         unmountOnExit
         onExited={() => setIntroDone(true)}
       >
-        <Box height={"100vh"}>
+        <Box height={"100vh"} position={"relative"}>
           <AnimatedIntro setDone={() => setIntroRunning(false)}/>
+          <Box position={"absolute"} bottom={0} left={0} right={0}>
+            <Footer>
+              Skip animation by clicking, pressing or touching
+            </Footer>
+          </Box>
         </Box>
       </Slide>
       <Slide
@@ -50,7 +55,10 @@ export default function App(): JSX.Element {
           minHeight={"100vh"}
         >
           <MainPage/>
-          <Footer/>
+          <Footer>
+            You can find the source{" "}
+            <a href={"https://github.com/Yrlish/alexandersson.xyz"} target={"_blank"} rel="noreferrer">here</a>
+          </Footer>
         </Box>
       </Slide>
     </Box>
