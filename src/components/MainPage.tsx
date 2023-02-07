@@ -24,9 +24,7 @@ export default function MainPage(): JSX.Element {
           <IconButton href={"https://twitter.com/Yrlish"} target={"_blank"} rel="noreferrer" title={"Twitter"}>
             <Twitter/>
           </IconButton>
-          <IconButton
-            href={"https://mastodon.clearly.rocks/@dennis"} target={"_blank"} rel={"noreferrer,me"} title={"Mastodon"}
-          >
+          <IconButton href={"https://mastodon.clearly.rocks/@dennis"} target={"_blank"} rel={"me"} title={"Mastodon"}>
             <MastodonIcon/>
           </IconButton>
           <IconButton href={"https://github.com/Yrlish"} target={"_blank"} rel="noreferrer" title={"GitHub"}>
