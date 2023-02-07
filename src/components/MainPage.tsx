@@ -3,6 +3,7 @@ import { Container, Grid, IconButton, Stack, Toolbar, Typography, useMediaQuery,
 import { GitHub, Twitter } from "@mui/icons-material"
 import IconBlock from "./IconBlock"
 import ExperienceTimeline from "./ExperienceTimeline"
+import { MastodonIcon } from "./MastodonIcon"
 
 export default function MainPage(): JSX.Element {
   const theme = useTheme()
@@ -20,10 +21,15 @@ export default function MainPage(): JSX.Element {
           Dennis Alexandersson
         </Typography>
         <Stack direction={"row"} spacing={1}>
-          <IconButton href={"https://twitter.com/Yrlish"} target={"_blank"} rel="noreferrer">
+          <IconButton href={"https://twitter.com/Yrlish"} target={"_blank"} rel="noreferrer" title={"Twitter"}>
             <Twitter/>
           </IconButton>
-          <IconButton href={"https://github.com/Yrlish"} target={"_blank"} rel="noreferrer">
+          <IconButton
+            href={"https://mastodon.clearly.rocks/@dennis"} target={"_blank"} rel={"noreferrer,me"} title={"Mastodon"}
+          >
+            <MastodonIcon/>
+          </IconButton>
+          <IconButton href={"https://github.com/Yrlish"} target={"_blank"} rel="noreferrer" title={"GitHub"}>
             <GitHub/>
           </IconButton>
         </Stack>
