@@ -14,7 +14,7 @@ export default function IconBlock(): JSX.Element {
             Web Development
           </Typography>
           <Typography variant={"caption"}>
-            TypeScript, React, esbuild
+            TypeScript, React, Vue
           </Typography>
         </Box>
       </Grid>
@@ -36,7 +36,7 @@ export default function IconBlock(): JSX.Element {
             DevOps
           </Typography>
           <Typography variant={"caption"}>
-            Git, GitLab, Jenkins, YouTrack, Jira
+            Git, GitLab, Jenkins, OpenShift, Helm
           </Typography>
         </Box>
       </Grid>
