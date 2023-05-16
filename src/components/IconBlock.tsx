@@ -36,7 +36,7 @@ export default function IconBlock(): JSX.Element {
             DevOps
           </Typography>
           <Typography variant={"caption"}>
-            Git, GitLab, Jenkins, OpenShift, Helm
+            Git, OpenShift, Tekton, Helm
           </Typography>
         </Box>
       </Grid>
