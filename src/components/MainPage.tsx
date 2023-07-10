@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Grid, IconButton, Stack, Toolbar, Typography, useMediaQuery, useTheme } from "@mui/material"
-import { GitHub, Twitter } from "@mui/icons-material"
+import { GitHub, Twitter, LinkedIn } from "@mui/icons-material"
 import IconBlock from "./IconBlock"
 import ExperienceTimeline from "./ExperienceTimeline"
 import { MastodonIcon } from "./MastodonIcon"
@@ -29,6 +29,9 @@ export default function MainPage(): JSX.Element {
           </IconButton>
           <IconButton href={"https://github.com/Yrlish"} target={"_blank"} rel="noreferrer" title={"GitHub"}>
             <GitHub/>
+          </IconButton>
+          <IconButton href={"https://www.linkedin.com/in/dennis-alexandersson/"} target={"_blank"} rel="noreferrer" title={"LinkedIn"}>
+            <LinkedIn/>
           </IconButton>
         </Stack>
       </Toolbar>
