@@ -57,7 +57,14 @@ export default function App(): JSX.Element {
           <MainPage/>
           <Footer>
             You can find the source{" "}
-            <a href={"https://github.com/Yrlish/alexandersson.xyz"} target={"_blank"} rel="noreferrer">here</a>
+            <a
+              href={"https://github.com/Yrlish/alexandersson.xyz"}
+              target={"_blank"}
+              rel={"noreferrer"}
+              style={{ color: "limegreen" }}
+            >
+              here
+            </a>
           </Footer>
         </Box>
       </Slide>
