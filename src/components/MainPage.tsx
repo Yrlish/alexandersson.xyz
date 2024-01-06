@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Grid, IconButton, Stack, Toolbar, Typography, useMediaQuery, useTheme } from "@mui/material"
-import { GitHub, Twitter, LinkedIn } from "@mui/icons-material"
+import { GitHub, LinkedIn } from "@mui/icons-material"
 import IconBlock from "./IconBlock"
 import ExperienceTimeline from "./ExperienceTimeline"
 import { MastodonIcon } from "./MastodonIcon"
@@ -21,10 +21,7 @@ export default function MainPage(): JSX.Element {
           Dennis Alexandersson
         </Typography>
         <Stack direction={"row"} spacing={1}>
-          <IconButton href={"https://twitter.com/Yrlish"} target={"_blank"} rel="noreferrer" title={"Twitter"}>
-            <Twitter/>
-          </IconButton>
-          <IconButton href={"https://mastodon.clearly.rocks/@dennis"} target={"_blank"} rel={"me"} title={"Mastodon"}>
+          <IconButton href={"https://mastodon.nu/@Yrlish"} target={"_blank"} rel={"me"} title={"Mastodon"}>
             <MastodonIcon/>
           </IconButton>
           <IconButton href={"https://github.com/Yrlish"} target={"_blank"} rel="noreferrer" title={"GitHub"}>
